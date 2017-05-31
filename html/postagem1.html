@@ -1,0 +1,346 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<title>Exemplo 1</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="../assets/css/main.css" />
+		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+		<style type="text/css">
+			* {
+    margin:0;
+    padding:0;
+}
+ 
+/*EN EL VIDEO HAY UN ERROR POR EL CUAL NO SE VISUALIZA EN GOOGLE CHROME,
+EL CÓDIGO A CONTINUACIÓN YA ESTA CORREGIDO*/
+ 
+header {
+    margin-top:10px;
+    width: 100%;
+    overflow: hidden;
+    height: 150px;
+    position: relative;
+}
+ 
+nav {
+    top:-20px;
+    position: absolute;
+    left:0;
+    right:0;
+    margin:20px auto;
+    max-width:1000px;
+    width:90%;
+}
+ 
+nav ul {
+    list-style:none;
+}
+ 
+nav > ul {
+    display:table;
+    /*Quitamos el overflow hidden que estaba aqui*/
+    width:100%;
+    background:#000;
+    position:relative;
+}
+ 
+nav > ul li {
+    display:table-cell;
+}
+ 
+/*Sub-menu*/
+nav > ul > li:hover > ul {
+    display:block;
+    height:100%;
+}
+ 
+nav > ul > li > ul {
+    display:block;
+    position:absolute;
+    background:#000;
+    left:0;
+    right:0;
+    overflow:hidden;
+    height:0%;
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -ms-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all .3s ease;
+}
+ 
+nav > ul li a {
+    color:#fff;
+    display:block;
+    line-height:20px;
+    padding:20px;
+    position: relative;
+    text-align:center;
+    text-decoration:none;
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -ms-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all .3s ease;
+}
+ 
+nav > ul > li > ul > li a:hover {
+    background:#5da5a2;
+}
+ 
+nav > ul > li > a span {
+    background:#174459;
+    display:block;
+    height:100%;
+    width:100%;
+    left:0;
+    position:absolute;
+    top:-55px;
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -ms-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all .3s ease;
+}
+ 
+nav > ul > li > a span .icon {
+    display:block;
+    line-height:60px;
+}
+ 
+nav > ul > li > a:hover > span {
+    top:0;
+}
+ 
+/*Colores*/
+nav ul li a .primero {
+    background:#0e5061;
+}
+ 
+nav ul li a .segundo {
+    background:#5da5a2;
+}
+ 
+nav ul li a .tercero {
+    background:#f25724;
+}
+ 
+nav ul li a .cuarto {
+    background:#174459;
+}
+ 
+nav ul li a .quinto {
+    background:#37a4d9;
+}
+		</style>
+	</head>
+	<body class="homepage">
+		<div id="page-wrapper">
+
+			<!-- Header -->
+				<div id="header-wrapper" class="wrapper">
+					<div id="header">
+
+						<!-- Logo -->
+							<div id="logo">
+								<h1><a href="index.html">Exemplo 1</a></h1>
+								<p>Navbar colorida</p>
+							</div>
+
+						<!-- Nav -->
+							<nav>
+            <ul>
+                <li><a href="../index.html"><span class="primero"><i class="icon icon-house"></i></span>Inicio</a></li>
+                <li><a href="#"><span class="segundo"><i class="icon icon-tag"></i></span>Categorias</a>
+                    <ul>
+                        <li><a href="#">Item #1</a></li>
+                        <li><a href="#">Item #2</a></li>
+                        <li><a href="#">Item #3</a></li>
+                        <li><a href="#">Item #4</a></li>
+                        <li><a href="#">Item #5</a></li>
+                    </ul>
+                </li>
+                <li><a href="#"><span class="tercero"><i class="icon icon-suitcase"></i></span>Servicios</a></li>
+                <li><a href="#"><span class="cuarto"><i class="icon icon-text"></i></span>Acerca de</a></li>
+                <li><a href="#"><span class="quinto"><i class="icon icon-mail"></i></span>Contacto</a></li>
+            </ul>
+        </nav>
+
+					</div>
+				</div>
+
+			<!-- Intro -->
+				<div id="intro-wrapper" class="wrapper style1">
+					<div class="title">Sobre</div>
+					<section id="intro" class="container">
+						<p class="style1">Site criado para fins de estudo</p>
+						<p class="style2">
+							O site foi criado com a ajuda <br class="mobile-hide" />
+							de <a href="http://html5up.net" class="nobr">HTML5 UP</a>
+						</p>
+						<p class="style3">O <strong>HTML/CSS HELP</strong>, foi criado para ajudar e dar um suporte aos alunos do projeto. <br>
+						Com a iniciativa de facilitar o desenvolvimento dos sites de forma <strong>RÁPIDA</strong> e <strong>PRÁTICA</strong></p>
+						<ul class="actions">
+							<li><a href="html/blog.html" class="button style3 big">Alguns exemplos</a></li>
+						</ul>
+					</section>
+				</div>
+
+			<!-- Main -->
+				
+			<!-- Highlights -->
+				<div class="wrapper style3">
+					<div class="title">Componentes</div>
+					<div id="highlights" class="container">
+						<div class="row 150%">
+							<div class="4u 12u(mobile)">
+								<section class="highlight">
+									<a href="#" class="image featured"><img src="" alt="" /></a>
+									<h3><a href="#">Anthony Anderson</a></h3>
+									<p>Responsável pelo site</p>
+									<ul class="actions">
+										<li><a href="#" class="button style1">Contato</a></li>
+									</ul>
+								</section>
+							</div>
+							<div class="4u 12u(mobile)">
+								<section class="highlight">
+									<a href="#" class="image featured"><img src="" alt="" /></a>
+									<h3><a href="#">Indefinido</a></h3>
+									<p>Vaga aberta!</p>
+									<ul class="actions">
+										<li><a href="#" class="button style1">Quero me candidatar</a></li>
+									</ul>
+								</section>
+							</div>
+							<div class="4u 12u(mobile)">
+								<section class="highlight">
+									<a href="#" class="image featured"><img src="" alt="" /></a>
+									<h3><a href="#">Indefinido</a></h3>
+									<p>Vaga aberta!</p>
+									<ul class="actions">
+										<li><a href="#" class="button style1">Quero me candidatar</a></li>
+									</ul>
+								</section>
+							</div>
+						</div>
+					</div>
+				</div>
+
+			<!-- Footer -->
+				<div id="footer-wrapper" class="wrapper">
+					<div class="title">Contato</div>
+					<div id="footer" class="container">
+						<header class="style1">
+							<h2>Fale conosco</h2>
+							<p>
+								Tem alguma sugestão, dúvida ou crítica?<br />
+								Preencha o formulário abaixo.
+							</p>
+						</header>
+						<hr />
+						<div class="row 150%">
+							<div class="6u 12u(mobile)">
+
+								<!-- Contact Form -->
+									<section>
+										<form method="post" action="#">
+											<div class="row 50%">
+												<div class="6u 12u(mobile)">
+													<input type="text" name="name" id="contact-name" placeholder="Nome" />
+												</div>
+												<div class="6u 12u(mobile)">
+													<input type="text" name="email" id="contact-email" placeholder="Email" />
+												</div>
+											</div>
+											<div class="row 50%">
+												<div class="12u">
+													<textarea name="message" id="contact-message" placeholder="Mensagem" rows="4"></textarea>
+												</div>
+											</div>
+											<div class="row">
+												<div class="12u">
+													<ul class="actions">
+														<li><input type="submit" class="style1" value="Enviar" /></li>
+														<li><input type="reset" class="style2" value="Reset" /></li>
+													</ul>
+												</div>
+											</div>
+										</form>
+									</section>
+
+							</div>
+							<div class="6u 12u(mobile)">
+
+								<!-- Contact -->
+									<section class="feature-list small">
+										<div class="row">
+											<div class="6u 12u(mobile)">
+												<section>
+													<h3 class="icon fa-home">Endereço</h3>
+													<p>
+														Indefinido<br />
+														Lugar nenhum<br />
+														Área 51
+													</p>
+												</section>
+											</div>
+											<div class="6u 12u(mobile)">
+												<section>
+													<h3 class="icon fa-comment">Social</h3>
+													<p>
+														<a href="#">@teste-html/css</a><br />
+														<a href="#">linkedin.com/testehtmlcss</a><br />
+														<a href="#">facebook.com/testehtmlcss</a>
+													</p>
+												</section>
+											</div>
+										</div>
+										<div class="row">
+											<div class="6u 12u(mobile)">
+												<section>
+													<h3 class="icon fa-envelope">Email</h3>
+													<p>
+														<a href="#">htmlcss@teste.com.br</a>
+													</p>
+												</section>
+											</div>
+											<div class="6u 12u(mobile)">
+												<section>
+													<h3 class="icon fa-phone">Fone</h3>
+													<p>
+														(99) 9999-9999
+													</p>
+												</section>
+											</div>
+										</div>
+									</section>
+
+							</div>
+						</div>
+						<hr />
+					</div>
+					<div id="copyright">
+						<ul>
+							<li>&copy; HTML/CSS HELP</li>
+						</ul>
+					</div>
+				</div>
+
+		</div>
+
+		<!-- Scripts -->
+
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.dropotron.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/skel-viewport.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>

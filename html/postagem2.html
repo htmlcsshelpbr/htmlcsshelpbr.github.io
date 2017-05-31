@@ -1,0 +1,346 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<title>Exemplo 2</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="../assets/css/main.css" />
+		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+		<style type="text/css">
+			body {
+    background:#e6e6e6;
+}
+ 
+header {
+    width:90%;
+    max-width:1000px;
+    margin:auto;
+}
+ 
+nav {
+    background:#528fd5;
+    margin-top:20px;
+    position: relative;
+}
+ 
+nav ul {
+    list-style:none;
+    padding:0;
+    margin:0;
+    overflow:hidden;
+}
+ 
+nav > ul > li {
+    float:left;
+}
+ 
+nav ul li a {
+    text-decoration:none;
+    color:#fff;
+    display:block;
+    padding:10px 20px;
+}
+ 
+nav ul li a:hover {
+    background:#3669a3;
+}
+ 
+nav > ul > li:hover div {
+    display:table;
+}
+ 
+/*Submenu*/
+nav ul li div {
+    width:1000px;
+    position: absolute;
+    left:0;
+    background:#ccc;
+    box-sizing:border-box;
+    display:none;
+}
+ 
+nav ul li div ul{
+    width:20%;
+    display:table-cell;
+    border-right:1px solid rgba(255,255,255,.5);
+    box-sizing:border-box;
+}
+ 
+nav ul li div ul:last-child {
+    border:none;
+}
+ 
+nav ul li div ul .titulo {
+    background:#000;
+    color:#fff;
+}
+ 
+nav ul li div ul .titulo a {
+    color:#fff;
+    padding:10px 20px;
+}
+ 
+.titulo.azul {background:#3498db;}
+.titulo.verde{background:#27ae60;}
+.titulo.naranja {background:#e67e22;}
+.titulo.rojo {background:#c0392b; color:#000;}
+ 
+nav ul li div ul .titulo a:hover {
+    background:none;
+}
+ 
+nav ul li div ul li a {
+    color:#000;
+}
+ 
+nav ul li div ul li a:hover {
+    color:#fff;
+}
+		</style>
+	</head>
+	<body class="homepage">
+		<div id="page-wrapper">
+
+			<!-- Header -->
+				<div id="header-wrapper" class="wrapper">
+					<div id="header">
+
+						<!-- Logo -->
+							<div id="logo">
+								<h1><a href="index.html">Exemplo 2</a></h1>
+								<p>Navbar com dropdown avançado</p>
+							</div>
+
+						<!-- Nav -->
+							<nav>
+            <ul>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="#">Servicios</a>
+ 
+                <div>
+ 
+                    <ul>
+                        <li class="titulo"><a href="">Categoria #1</a></li>
+                        <li><a href="">Categoria #2</a></li>
+                        <li><a href="">Categoria #3</a></li>
+                        <li><a href="">Categoria #4</a></li>
+                        <li><a href="">Categoria #5</a></li>
+                    </ul>
+ 
+                    <ul>
+                        <li class="titulo azul"><a href="">Categoria #1</a></li>
+                        <li><a href="">Categoria #2</a></li>
+                        <li><a href="">Categoria #3</a></li>
+                        <li><a href="">Categoria #4</a></li>
+                        <li><a href="">Categoria #5</a></li>
+                    </ul>
+ 
+                    <ul>
+                        <li class="titulo verde"><a href="">Categoria #1</a></li>
+                        <li><a href="">Categoria #2</a></li>
+                        <li><a href="">Categoria #3</a></li>
+                        <li><a href="">Categoria #4</a></li>
+                        <li><a href="">Categoria #5</a></li>
+                    </ul>
+ 
+                    <ul>
+                        <li class="titulo rojo"><a href="">Categoria #1</a></li>
+                        <li><a href="">Categoria #2</a></li>
+                        <li><a href="">Categoria #3</a></li>
+                        <li><a href="">Categoria #4</a></li>
+                        <li><a href="">Categoria #5</a></li>
+                    </ul>
+ 
+                    <ul>
+                        <li class="titulo naranja"><a href="">Categoria #1</a></li>
+                        <li><a href="">Categoria #2</a></li>
+                        <li><a href="">Categoria #3</a></li>
+                        <li><a href="">Categoria #4</a></li>
+                        <li><a href="">Categoria #5</a></li>
+                    </ul>
+                </div>
+ 
+                </li>
+                <li><a href="#">Productos</a></li>
+                <li><a href="#">Acerca de</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+        </nav>
+
+					</div>
+				</div>
+
+			<!-- Intro -->
+				<div id="intro-wrapper" class="wrapper style1">
+					<div class="title">Sobre</div>
+					<section id="intro" class="container">
+						<p class="style1">Site criado para fins de estudo</p>
+						<p class="style2">
+							O site foi criado com a ajuda <br class="mobile-hide" />
+							de <a href="http://html5up.net" class="nobr">HTML5 UP</a>
+						</p>
+						<p class="style3">O <strong>HTML/CSS HELP</strong>, foi criado para ajudar e dar um suporte aos alunos do projeto. <br>
+						Com a iniciativa de facilitar o desenvolvimento dos sites de forma <strong>RÁPIDA</strong> e <strong>PRÁTICA</strong></p>
+						<ul class="actions">
+							<li><a href="html/blog.html" class="button style3 big">Alguns exemplos</a></li>
+						</ul>
+					</section>
+				</div>
+
+			<!-- Main -->
+				
+			<!-- Highlights -->
+				<div class="wrapper style3">
+					<div class="title">Componentes</div>
+					<div id="highlights" class="container">
+						<div class="row 150%">
+							<div class="4u 12u(mobile)">
+								<section class="highlight">
+									<a href="#" class="image featured"><img src="" alt="" /></a>
+									<h3><a href="#">Anthony Anderson</a></h3>
+									<p>Responsável pelo site</p>
+									<ul class="actions">
+										<li><a href="#" class="button style1">Contato</a></li>
+									</ul>
+								</section>
+							</div>
+							<div class="4u 12u(mobile)">
+								<section class="highlight">
+									<a href="#" class="image featured"><img src="" alt="" /></a>
+									<h3><a href="#">Indefinido</a></h3>
+									<p>Vaga aberta!</p>
+									<ul class="actions">
+										<li><a href="#" class="button style1">Quero me candidatar</a></li>
+									</ul>
+								</section>
+							</div>
+							<div class="4u 12u(mobile)">
+								<section class="highlight">
+									<a href="#" class="image featured"><img src="" alt="" /></a>
+									<h3><a href="#">Indefinido</a></h3>
+									<p>Vaga aberta!</p>
+									<ul class="actions">
+										<li><a href="#" class="button style1">Quero me candidatar</a></li>
+									</ul>
+								</section>
+							</div>
+						</div>
+					</div>
+				</div>
+
+			<!-- Footer -->
+				<div id="footer-wrapper" class="wrapper">
+					<div class="title">Contato</div>
+					<div id="footer" class="container">
+						<header class="style1">
+							<h2>Fale conosco</h2>
+							<p>
+								Tem alguma sugestão, dúvida ou crítica?<br />
+								Preencha o formulário abaixo.
+							</p>
+						</header>
+						<hr />
+						<div class="row 150%">
+							<div class="6u 12u(mobile)">
+
+								<!-- Contact Form -->
+									<section>
+										<form method="post" action="#">
+											<div class="row 50%">
+												<div class="6u 12u(mobile)">
+													<input type="text" name="name" id="contact-name" placeholder="Nome" />
+												</div>
+												<div class="6u 12u(mobile)">
+													<input type="text" name="email" id="contact-email" placeholder="Email" />
+												</div>
+											</div>
+											<div class="row 50%">
+												<div class="12u">
+													<textarea name="message" id="contact-message" placeholder="Mensagem" rows="4"></textarea>
+												</div>
+											</div>
+											<div class="row">
+												<div class="12u">
+													<ul class="actions">
+														<li><input type="submit" class="style1" value="Enviar" /></li>
+														<li><input type="reset" class="style2" value="Reset" /></li>
+													</ul>
+												</div>
+											</div>
+										</form>
+									</section>
+
+							</div>
+							<div class="6u 12u(mobile)">
+
+								<!-- Contact -->
+									<section class="feature-list small">
+										<div class="row">
+											<div class="6u 12u(mobile)">
+												<section>
+													<h3 class="icon fa-home">Endereço</h3>
+													<p>
+														Indefinido<br />
+														Lugar nenhum<br />
+														Área 51
+													</p>
+												</section>
+											</div>
+											<div class="6u 12u(mobile)">
+												<section>
+													<h3 class="icon fa-comment">Social</h3>
+													<p>
+														<a href="#">@teste-html/css</a><br />
+														<a href="#">linkedin.com/testehtmlcss</a><br />
+														<a href="#">facebook.com/testehtmlcss</a>
+													</p>
+												</section>
+											</div>
+										</div>
+										<div class="row">
+											<div class="6u 12u(mobile)">
+												<section>
+													<h3 class="icon fa-envelope">Email</h3>
+													<p>
+														<a href="#">htmlcss@teste.com.br</a>
+													</p>
+												</section>
+											</div>
+											<div class="6u 12u(mobile)">
+												<section>
+													<h3 class="icon fa-phone">Fone</h3>
+													<p>
+														(99) 9999-9999
+													</p>
+												</section>
+											</div>
+										</div>
+									</section>
+
+							</div>
+						</div>
+						<hr />
+					</div>
+					<div id="copyright">
+						<ul>
+							<li>&copy; HTML/CSS HELP</li>
+						</ul>
+					</div>
+				</div>
+
+		</div>
+
+		<!-- Scripts -->
+
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.dropotron.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/skel-viewport.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
